@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!--
+    Full Name: Miel Denise M. Maglanque
+    Section: CS201
+    Activity: Resort
+    Date: Aug 19, 2026
+-->
+<html lang="en">
+<head>
+    <title>Emilia's Place – Gallery &amp; Facilities</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    
+    <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+    <link rel="icon" sizes="192x192" href="img/android-chrome-192.png" />
+</head>
+<body>
+    <div id="container">
+
+        <header>
+            <a href="index.html">
+                <img src="img/logo.jpg" alt="Emilia's Place Logo" class="logo" />
+            </a>
+            <div class="header-text">
+                <h1>Emilia's Place</h1>
+                <p class="subtitle">PRIVATE RESORT AND EVENTS VENUE</p>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- Facebook Video Embed Header -->
+            <div id="hero" class="tablet-desktop video-container">
+                <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F61570593879353%2Fvideos%2F667169379417873%2F&show_text=false&width=267&t=0" scrolling="no" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+
+            <div class="tablet-desktop">
+                <table>
+                    <caption>Emilia's Place Gallery &amp; Offerings</caption>
+                    <thead>
+                        <tr>
+                            <th>Gallery</th>
+                            <th>Type</th>
+                            <th>Location</th>
+                            <th>Occasion</th>
+                            <th>Highlights</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Swimming Pool</td>
+                            <td>Facility</td>
+                            <td>Pool Area</td>
+                            <td>Family &amp; Leisure</td>
+                            <td>Swimming</td>
+                        </tr>
+                        <tr>
+                            <td>Garden Venue</td>
+                            <td>Venue</td>
+                            <td>Garden Area</td>
+                            <td>Events</td>
+                            <td>Outdoor Setting</td>
+                        </tr>
+                        <tr>
+                            <td>Event Decorations</td>
+                            <td>Event</td>
+                            <td>Function Area</td>
+                            <td>Special Events</td>
+                            <td>Elegant Setup</td>
+                        </tr>
+                        <tr>
+                            <td>Family Gatherings</td>
+                            <td>Event</td>
+                            <td>Resort Area</td>
+                            <td>Family</td>
+                            <td>Quality Time</td>
+                        </tr>
+                        <tr>
+                            <td>Weddings</td>
+                            <td>Event</td>
+                            <td>Garden Venue</td>
+                            <td>Weddings</td>
+                            <td>Ceremonies</td>
+                        </tr>
+                        <tr>
+                            <td>Birthday Celebrations</td>
+                            <td>Event</td>
+                            <td>Function Area</td>
+                            <td>Birthdays</td>
+                            <td>Celebrations</td>
+                        </tr>
+                        <tr>
+                            <td>Team Building Activities</td>
+                            <td>Activity</td>
+                            <td>Resort Grounds</td>
+                            <td>Team Building</td>
+                            <td>Group Activities</td>
+                        </tr>
+                        <tr>
+                            <td>Resort Facilities</td>
+                            <td>Facility</td>
+                            <td>Emilia's Place</td>
+                            <td>All Guests</td>
+                            <td>Resort Amenities</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="form">
+                <h2>Inquire or Reserve Your Special Event Below</h2>
+                
+                <form class="form-grid">
+                    <fieldset>
+                        <legend>Customer Information</legend>
+                        <label for="fName">First Name:</label>
+                        <input type="text" id="fName" name="fName" required />
+
+                        <label for="lName">Last Name:</label>
+                        <input type="text" id="lName" name="lName" required />
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required />
+
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required />
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Additional Information</legend>
+                        <p>I would like more information about:</p>
+
+                        <label for="pool">
+                            <input type="checkbox" name="interest" id="pool" value="Swimming Pool" /> Swimming Pool
+                        </label>
+
+                        <label for="events">
+                            <input type="checkbox" name="interest" id="events" value="Event Venue" /> Event Venue
+                        </label>
+
+                        <label for="fullhouse">
+                            <input type="checkbox" name="interest" id="fullhouse" value="Full-House Rental" /> Full-House Rental
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Referral Source</legend>
+                        <label for="reference">How did you find us?</label>
+                        <select name="reference" id="reference">
+                            <option value="ad">Advertisement</option>
+                            <option value="friend">Friend</option>
+                            <option value="google">Google</option>
+                            <option value="social">Social Media</option>
+                            <option value="other">Other</option>
+                        </select>
+
+                        <label for="questions">Questions?</label>
+                        <textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+                    </fieldset>
+
+                    <input type="submit" id="submit" value="Submit" class="btn" />
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; Copyright 2026. All rights reserved. Created by Miel Maglanque</p>
+            <p><a href="mailto:emiliasplaceprivateresortandeventsvenue@club.net">emiliasplaceprivateresortandeventsvenue@club.net</a></p>
+        </footer>
+
+    </div>
+</body>
+</html>
